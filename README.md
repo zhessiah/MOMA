@@ -32,18 +32,4 @@ conda activate MOMA
 CUDA_VISIBLE_DEVICES=2 python3 src/main.py --config=MOMA --env-config=sc2 with env_args.map_name=1c3s5z
 ```
 
-```shell
-# For Difficulty-Enhanced Predator-Prey
-python3 src/main.py --config=qmix_predator_prey --env-config=stag_hunt with env_args.map_name=stag_hunt
-```
 
-```shell
-# For Communication tasks
-python3 src/main.py --config=maddpg --env-config=stag_hunt with env_args.map_name=stag_hunt
-```
-
-```shell
-# For Google Football (Insufficient testing)
-# map_name: academy_counterattack_easy, academy_counterattack_hard, five_vs_five...
-python3 src/main.py --config=vdn_gfootball --env-config=gfootball with env_args.map_name=academy_counterattack_hard env_args.num_agents=4
-```
