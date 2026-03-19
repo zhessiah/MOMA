@@ -69,6 +69,6 @@ vdn_soft_update: True
 predict_vdn_target: True
 predict2_vdn_target: True
 use_qtotal_td: False
-name: "PRO-MARL_sc2"
+name: "MOMA_sc2"
 
 

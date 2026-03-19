@@ -1,6 +1,6 @@
 # MOMA
 
-Open-source code for Rethinking Robust Multi-Agent Reinforcement Learning as a Multi-Objective Problem: A Gradient Balancing Approach.
+Open-source code for MOMA: Multi-Objective Memetic Attack for Multi-Agent Reinforcement Learning.
 
 
 ## Installation instructions
