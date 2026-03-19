@@ -1,4 +1,4 @@
-# PRO-MARL
+# MOMA
 
 Open-source code for Rethinking Robust Multi-Agent Reinforcement Learning as a Multi-Objective Problem: A Gradient Balancing Approach.
 
@@ -9,8 +9,8 @@ Install Python packages
 
 ```shell
 # require Anaconda 3 or Miniconda 3
-conda create -n PRO-MARL python=3.8 -y
-conda activate PRO-MARL
+conda create -n MOMA python=3.8 -y
+conda activate MOMA
 
 bash install_dependecies.sh
 ```
@@ -28,8 +28,8 @@ bash install_sc2.sh
 
 ```shell
 # For SMAC
-conda activate PRO-MARL
-CUDA_VISIBLE_DEVICES=2 python3 src/main.py --config=PRO-MARL --env-config=sc2 with env_args.map_name=1c3s5z
+conda activate MOMA
+CUDA_VISIBLE_DEVICES=2 python3 src/main.py --config=MOMA --env-config=sc2 with env_args.map_name=1c3s5z
 ```
 
 ```shell
@@ -60,10 +60,10 @@ For robustness and adversarial attack details, go to `default.yaml` and change `
 
 bash run.sh m3ddpg stag_hunt stag_hunt t_max=5050000 1 2 1
 
-bash run.sh PRO-MARL mpe simple_spread epsilon_anneal_time=500000,td_lambda=0.3 1 0 1
+bash run.sh MOMA mpe simple_spread epsilon_anneal_time=500000,td_lambda=0.3 1 0 1
 
 conda activate ROMANCE
-bash run.sh PRO-MARL sc2 5m_vs_6m epsilon_anneal_time=500000,td_lambda=0.3 1 2 1
+bash run.sh MOMA sc2 5m_vs_6m epsilon_anneal_time=500000,td_lambda=0.3 1 2 1
 
 bash run.sh qatten gfootball academy_counterattack_easy epsilon_anneal_time=500000,td_lambda=0.3 1 1 1
 
