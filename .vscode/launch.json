@@ -1,0 +1,23 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "justMyCode": false,
+            "args": ["--config=EECG",
+            // "--env-config=mpe",
+            "--env-config=sc2", "with", "env_args.map_name=2c_vs_64zg",
+            // "--env-config=stag_hunt",
+            // "--env-config=one_step_matrix_game",
+        ]
+        }
+    ]
+}
